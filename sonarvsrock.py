@@ -19,7 +19,10 @@ Y = data[60]
 print(X)
 print(Y)
 
-
+# Splitting the training and test dataset
+X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size= 0.1,
+                                                    stratify = Y, random_state=1)
+print(X.shape, X_train.shape, Y_test.shape)
 
 
 
